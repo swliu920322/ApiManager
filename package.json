@@ -1,0 +1,37 @@
+{
+  "name": "apimanager",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "files": [
+    "components/**",
+    "configs/**",
+    "entry/**",
+    "less/**",
+    "logic/**",
+    "types/**",
+    "utils/**",
+    "index.ts",
+    "design.md",
+    "package.json"
+  ],
+  "keywords": [
+    "api",
+    "json",
+    "schema"
+  ],
+  "dependencies": {
+    "@monaco-editor/react": "4.6.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "antd": "4.8.5",
+    "copy-to-clipboard": "3.3.3",
+    "nanoid": "5.0.7",
+    "react": "16.8.6",
+    "typescript": "^5.6.3"
+  },
+  "author": "max liu",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup-plugin-typescript2": "^0.36.0"
+  }
+}
