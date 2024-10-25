@@ -1,0 +1,165 @@
+.ant-tree-treenode {
+
+  .ant-tree-node-content-wrapper-normal {
+    flex: 1;
+  }
+
+  .icon-operate {
+    display: none;
+  }
+
+  &:hover {
+    background: #f5f5f5;
+
+    .icon-operate {
+      display: flex;
+      gap: 3px;
+    }
+  }
+}
+
+.ant-select-item, .ant-select-selection-item, .method {
+  &[title="GET"] {
+    color: #17B26A;
+  }
+
+  &[title="POST"] {
+    color: #F16820;
+  }
+
+  &[title="PUT"] {
+    color: #2E90FA;
+  }
+
+  &[title="DELETE"] {
+    color: #F04438;
+  }
+}
+
+.api-manager {
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+}
+
+.type-item {
+  .ant-select-selector {
+    width: unset !important;
+    border: none !important;
+  }
+
+  .ant-select-selection-item {
+    text-decoration: underline;
+
+    &[title="object"] {
+      color: #8390F9
+    }
+
+    &[title="array"] {
+      color: #17B26A
+    }
+
+    &[title="string"] {
+      color: #139659
+    }
+
+    &[title="number"] {
+      color: #EF6BBC
+    }
+
+    &[title="integer"] {
+      color: #EE46BC
+    }
+
+    &[title="boolean"] {
+      color: #F39FDF
+    }
+  }
+
+  .ant-select-arrow {
+    display: none;
+  }
+}
+
+.operate-item {
+  cursor: pointer;
+  padding: 3px 15px;
+
+  &:hover {
+    background: #dce0e6;
+  }
+}
+
+.un-editable {
+  padding: 1px 2px;
+  color: #B685EE;
+  background: #EBE9F4;
+}
+
+.operate-area {
+  .anticon {
+    padding: 5px;
+
+    &:hover {
+      background: #dfdcdc;
+    }
+  }
+}
+
+.menu-tree {
+  .ant-tree-node-content-wrapper {
+    overflow: hidden;
+  }
+
+  .ant-tree-treenode:has(.hidden) {
+    display: none;
+  }
+}
+
+.rotate-icon {
+  transform: rotate(90deg);
+  transition: all 1s ease;
+  transform-origin: center
+}
+
+.required-container {
+  .required-flag {
+    cursor: pointer;
+    padding: 4px 10px 0;
+    display: none;
+
+    &:hover {
+      background: #cccccc60;
+    }
+  }
+
+  &:hover {
+    .required-flag {
+      display: block;
+    }
+  }
+}
+
+.tabs-total {
+  .ant-tabs-content {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.menu-container {
+  background: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  z-index: 9;
+  box-shadow: 0 0 1px 3px #0000001f;
+
+  &__item {
+    padding: 6px 40px 6px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: #f5f5f5;
+    }
+  }
+}
