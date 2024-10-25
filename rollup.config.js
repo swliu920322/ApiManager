@@ -2,26 +2,25 @@ import typescript from 'rollup-plugin-typescript2';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import less from 'rollup-plugin-less';
+import {cleandir} from "rollup-plugin-cleandir";
 
 export default {
     input: {
         apiManager: 'entry/reducer/index.tsx',
-        sdk: 'configs/sdk.ts'
+        sdk: 'configs/sdk.ts',
+        // model: 'logic/model.ts',
     },
     output: {
         dir: 'dist',
         format: 'esm',
         entryFileNames: '[name].js',
     },
-    external: ['react'],
     plugins: [
-        resolve({
-            browser: true
-        }),
+        cleandir('./dist'),
+        resolve({browser: true}),
         commonjs(),
         typescript({
             tsconfig: './tsconfig.json',
-            useTsconfigDeclarationDir: true,
             clean: true,
         }),
         less({

@@ -1,5 +1,5 @@
 export function throttle(func: (...arg: any[]) => any, delay = 400) {
-	let timer: number = null;
+	let timer: any = null;
 	return (...args: any[]) => {
 		if (!timer) {
 			func(...args);
@@ -11,7 +11,7 @@ export function throttle(func: (...arg: any[]) => any, delay = 400) {
 }
 
 export function debounce(func: (...arg: any[]) => any, delay = 400) {
-	let timer: number;
+	let timer: any;
 	return (...args: any[]) => {
 		clearTimeout(timer);
 		timer = setTimeout(() => {
