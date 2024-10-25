@@ -17,7 +17,7 @@ const ExtraContent = (props: any) => {
           <span
             className="operate-item"
             onClick={e => {
-              e.stopPropagation();
+              e?.stopPropagation();
               openNewRequestByTree(key);
             }}
           >

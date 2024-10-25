@@ -22,7 +22,7 @@ export const CanEditNode = memo(
 
     function valueChange(e: React.ChangeEvent<HTMLInputElement>) {
       const value = e.target.value;
-      props.valueChange(value);
+      props.valueChange?.(value);
       setInnerState(value);
     }
 

@@ -1,8 +1,8 @@
 import { Button, Modal, Tabs, message } from "antd";
 import { ComplexData } from "../schema";
 import React, { forwardRef, useRef, useState } from "react";
-import { JsonEditor } from "../common/JsonEditor";
-import { IJSONSchema } from "../../types/schema";
+import { JsonEditor } from "../common";
+import { IJSONSchema } from "../../types";
 
 interface IBody {
   body: IJSONSchema;

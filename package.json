@@ -25,12 +25,15 @@
     "json",
     "schema"
   ],
+  "peerDependencies": {
+    "antd": "4.8.5",
+    "react": "16.8.6"
+  },
   "dependencies": {
     "@monaco-editor/react": "4.6.0",
-    "antd": "4.8.5",
+    "monaco-editor": "0.52.0",
     "copy-to-clipboard": "3.3.3",
-    "nanoid": "5.0.7",
-    "react": "16.8.6"
+    "nanoid": "5.0.7"
   },
   "author": "max liu",
   "license": "MIT",
