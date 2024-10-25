@@ -2,6 +2,7 @@
   "name": "@swliu920322/apimanager",
   "version": "0.0.2",
   "description": "",
+  "type": "module",
   "private": false,
   "main": "index.ts",
   "publishConfig": {
@@ -13,6 +14,7 @@
     "configs/**",
     "entry/**",
     "less/**",
+    "dist/**",
     "logic/**",
     "types/**",
     "utils/**",
@@ -20,6 +22,9 @@
     "design.md",
     "package.json"
   ],
+  "scripts": {
+    "build": "rollup -c"
+  },
   "keywords": [
     "api",
     "json",
@@ -31,14 +36,23 @@
   },
   "dependencies": {
     "@monaco-editor/react": "4.6.0",
-    "monaco-editor": "0.52.0",
+    "@rollup/plugin-multi-entry": "^6.0.1",
     "copy-to-clipboard": "3.3.3",
-    "nanoid": "5.0.7"
+    "monaco-editor": "0.52.0",
+    "nanoid": "5.0.7",
+    "rollup-plugin-less": "^1.1.3",
+    "rollup-plugin-node-externals": "^7.1.3",
+    "typescript": "^5.6.3"
   },
   "author": "max liu",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-replace": "^6.0.1",
     "@rollup/plugin-typescript": "^8.3.3",
+    "@types/antd": "1.0.0",
+    "@types/react": "18.3.10",
     "rollup-plugin-typescript2": "^0.36.0"
   }
 }
