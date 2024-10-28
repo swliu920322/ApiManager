@@ -1,4 +1,4 @@
-import { IApiManager } from "../types/model";
+import { IApiManager } from "../types";
 import { IAction } from "../types";
 import { apiManagerConstants } from "./apiManager.constants";
 import { netWorkRequestConfig } from "../configs/sdk";

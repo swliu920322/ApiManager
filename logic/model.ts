@@ -1,5 +1,5 @@
-import { IJSONSchema } from "../types/schema";
-import { INode, IRequestInfo } from "../types/model";
+import { IJSONSchema } from "../types";
+import { INode, IRequestInfo } from "../types";
 import { nanoid } from "nanoid";
 
 function generateJson(): IJSONSchema {

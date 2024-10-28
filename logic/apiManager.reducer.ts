@@ -1,6 +1,6 @@
 import { apiManagerConstants } from "./apiManager.constants";
 import { generateTreeNode } from "./model";
-import { IApiManager, INode, IRightPanel } from "../types/model";
+import { IApiManager, INode, IRightPanel } from "../types";
 import { IAction } from "../types";
 import { dealTypeWithReducer } from "./apiManager.deal";
 import {

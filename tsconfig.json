@@ -8,8 +8,8 @@
     "removeComments": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationDir": "dist/types"
+//    "declaration": true,
+//    "declarationDir": "dist/types"
   },
   "include": [
     "**/*"

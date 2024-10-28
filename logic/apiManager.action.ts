@@ -1,5 +1,5 @@
 import { apiManagerConstants } from "./apiManager.constants";
-import { INode, IProjectInfo, IRequestInfo } from "../types/model";
+import { INode, IProjectInfo, IRequestInfo } from "../types";
 
 export const apiManagerAction = {
   init(apiTree: INode[]) {
